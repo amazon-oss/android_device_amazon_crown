@@ -5,6 +5,10 @@
 
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc/)
+
 # Screen
 TARGET_SCREEN_DENSITY := 160
 TARGET_SCREEN_HEIGHT := 480
