@@ -1,0 +1,7 @@
+prebuilt_etc {
+    name: "init.target.checkers.rc",
+    filename: "init.target.rc",
+    src: "init.target.checkers.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}

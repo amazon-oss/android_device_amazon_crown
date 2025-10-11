@@ -1,0 +1,3 @@
+on boot
+    chown bluetooth net_bt /dev/stpbt
+    chmod 0660 /dev/stpbt

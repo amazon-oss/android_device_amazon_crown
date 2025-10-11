@@ -18,6 +18,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mt76x8_bt
 
+# Init
+PRODUCT_PACKAGES += \
+    init.target.checkers.rc
+
 # Input
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc/)
