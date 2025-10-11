@@ -8,6 +8,9 @@ DEVICE_PATH := device/amazon/checkers
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := checkers
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_checkers.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := checkers_defconfig
 

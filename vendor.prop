@@ -1,5 +1,8 @@
 # Display
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 
+# Bluetooth
+ro.vendor.rfkilldisabled=1
+
 # Wi-Fi
 wifi.interface=wlan0
