@@ -34,26 +34,26 @@
     <kctl name="ADC_A MICPGA Volume Ctrl" value="40" />
     <kctl name="SpiTimeStamps" value="Off" />
     <!-- TLV3101 ADC -->
-    <!--external_speaker output-->
-    <path name="ext_speaker_output" value="turnon">
+    <!--speaker output-->
+    <path name="speaker_output" value="turnon">
         <kctl name="Stereo DAC MIXL DAC R1 Switch" value="1" />
         <kctl name="Stereo DAC MIXR DAC L1 Switch" value="1" />
         <kctl name="OUT Playback Switch" value="1" />
         <kctl name="Ext_Speaker_Amp_Switch" value="Off" />
     </path>
-    <path name="ext_speaker_output" value="turnoff">
+    <path name="speaker_output" value="turnoff">
         <kctl name="Ext_Speaker_Amp_Switch" value="On" />
         <kctl name="OUT Playback Switch" value="0" />
     </path>
     <!--Lineout-->
-    <path name="ext_headphone_output" value="turnon">
+    <path name="headphone_output" value="turnon">
         <kctl name="Stereo DAC MIXL DAC R1 Switch" value="0" />
         <kctl name="Stereo DAC MIXR DAC L1 Switch" value="0" />
         <kctl name="OUT Playback Switch" value="0 0" />
         <kctl name="HPO MIX HPVOL Switch" value="1" />
         <kctl name="HPVOL Playback Switch" value="1" />
     </path>
-    <path name="ext_headphone_output" value="turnoff">
+    <path name="headphone_output" value="turnoff">
         <kctl name="HPO MIX HPVOL Switch" value="0" />
         <kctl name="HPVOL Playback Switch" value="0" />
     </path>
