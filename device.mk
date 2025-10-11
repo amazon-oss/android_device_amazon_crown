@@ -17,6 +17,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
 
+# Overlays
+PRODUCT_PACKAGES += \
+    SystemUIOverlayCheckers
+
 # Screen
 TARGET_SCREEN_DENSITY := 160
 TARGET_SCREEN_HEIGHT := 480
