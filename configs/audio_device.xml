@@ -3,29 +3,6 @@
     <versioncontrol value="2.02">
     </versioncontrol>
     <!-- These are the initial mixer settings -->
-    <!-- RT5616 DAC -->
-    <!-- LO out -->
-    <kctl name="Ext_Speaker_Amp_Switch" value="On" />
-    <kctl name="Audio_I2S0dl1_hd_Switch" value="On" />
-    <kctl name="DAC MIXL INF1 Switch" value="1" />
-    <kctl name="DAC MIXR INF1 Switch" value="1" />
-    <kctl name="Stereo DAC MIXL DAC L1 Switch" value="1" />
-    <kctl name="Stereo DAC MIXL DAC R1 Switch" value="1" />
-    <kctl name="Stereo DAC MIXR DAC L1 Switch" value="1" />
-    <kctl name="Stereo DAC MIXR DAC R1 Switch" value="1" />
-    <kctl name="OUT MIXL DAC L1 Switch" value="1" />
-    <kctl name="OUT MIXR DAC R1 Switch" value="1" />
-    <kctl name="LOUT MIX OUTVOL L Switch" value="1" />
-    <kctl name="LOUT MIX OUTVOL R Switch" value="1" />
-    <kctl name="OUT Channel Switch" value="1" />
-    <kctl name="OUT Playback Switch" value="1" />
-    <kctl name="DAC1 Playback Volume" value="173" />
-    <kctl name="OUT Playback Volume" value="29" />
-    <!-- HP out -->
-    <kctl name="HPO MIX HPVOL Switch" value="0" />
-    <kctl name="HPVOL Playback Switch" value="0" />
-    <kctl name="HP Playback Volume" value="34" />
-    <!-- RT5616 DAC -->
     <!-- TLV3101 ADC -->
     <kctl name="ADC_A Left Ip Select ADC_A DIF1_L switch" value="1" />
     <kctl name="ADC_A Right Ip Select ADC_A DIF1_R switch" value="1" />
@@ -36,20 +13,46 @@
     <!-- TLV3101 ADC -->
     <!--speaker output-->
     <path name="speaker_output" value="turnon">
+        <kctl name="Ext_Speaker_Amp_Switch" value="Off" />
+        <kctl name="Audio_I2S0dl1_hd_Switch" value="On" />
+        <kctl name="DAC MIXL INF1 Switch" value="1" />
+        <kctl name="DAC MIXR INF1 Switch" value="1" />
+        <kctl name="Stereo DAC MIXL DAC L1 Switch" value="1" />
         <kctl name="Stereo DAC MIXL DAC R1 Switch" value="1" />
         <kctl name="Stereo DAC MIXR DAC L1 Switch" value="1" />
+        <kctl name="Stereo DAC MIXR DAC R1 Switch" value="1" />
+        <kctl name="OUT MIXL DAC L1 Switch" value="1" />
+        <kctl name="OUT MIXR DAC R1 Switch" value="1" />
+        <kctl name="LOUT MIX OUTVOL L Switch" value="1" />
+        <kctl name="LOUT MIX OUTVOL R Switch" value="1" />
+        <kctl name="OUT Channel Switch" value="1" />
         <kctl name="OUT Playback Switch" value="1" />
-        <kctl name="Ext_Speaker_Amp_Switch" value="Off" />
+        <kctl name="DAC1 Playback Volume" value="173" />
+        <kctl name="OUT Playback Volume" value="29" />
     </path>
     <path name="speaker_output" value="turnoff">
         <kctl name="Ext_Speaker_Amp_Switch" value="On" />
         <kctl name="OUT Playback Switch" value="0" />
     </path>
+
     <!--Lineout-->
     <path name="headphone_output" value="turnon">
+        <kctl name="Ext_Speaker_Amp_Switch" value="On" />
+        <kctl name="Audio_I2S0dl1_hd_Switch" value="On" />
+        <kctl name="DAC MIXL INF1 Switch" value="1" />
+        <kctl name="DAC MIXR INF1 Switch" value="1" />
+        <kctl name="Stereo DAC MIXL DAC L1 Switch" value="1" />
         <kctl name="Stereo DAC MIXL DAC R1 Switch" value="0" />
         <kctl name="Stereo DAC MIXR DAC L1 Switch" value="0" />
+        <kctl name="Stereo DAC MIXR DAC R1 Switch" value="1" />
+        <kctl name="OUT MIXL DAC L1 Switch" value="1" />
+        <kctl name="OUT MIXR DAC R1 Switch" value="1" />
+        <kctl name="LOUT MIX OUTVOL L Switch" value="1" />
+        <kctl name="LOUT MIX OUTVOL R Switch" value="1" />
+        <kctl name="OUT Channel Switch" value="1" />
         <kctl name="OUT Playback Switch" value="0 0" />
+        <kctl name="DAC1 Playback Volume" value="173" />
+        <kctl name="HP Playback Volume" value="34" />
         <kctl name="HPO MIX HPVOL Switch" value="1" />
         <kctl name="HPVOL Playback Switch" value="1" />
     </path>
