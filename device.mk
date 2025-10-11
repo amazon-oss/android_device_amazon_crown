@@ -13,6 +13,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc/)
 
+# Modules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+
 # Screen
 TARGET_SCREEN_DENSITY := 160
 TARGET_SCREEN_HEIGHT := 480
@@ -31,6 +35,16 @@ PRODUCT_COPY_FILES += \
 
 # Vendor partition
 TARGET_HAS_VENDOR_PARTITION := false
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service-lazy
+
+PRODUCT_PACKAGES += \
+    mt76x8_wlan
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit from mt8163-common
 $(call inherit-product, device/amazon/mt8163-common/mt8163.mk)

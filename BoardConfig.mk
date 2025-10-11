@@ -24,6 +24,12 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # VNDK
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# Wi-Fi
+BOARD_WLAN_DEVICE := MediaTek
+BOARD_MEDIATEK_COMBO_CHIP := mt76xx
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mtk
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
+
 # Inherit from mt8163-common
 include device/amazon/mt8163-common/BoardConfigCommon.mk
 
