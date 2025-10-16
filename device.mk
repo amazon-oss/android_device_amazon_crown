@@ -5,6 +5,18 @@
 
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
+
+PRODUCT_PACKAGES += \
+    libaudio-resampler \
+    libaudioutils \
+    libaudioroute \
+    libtinyalsa \
+    libamazonlog
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \

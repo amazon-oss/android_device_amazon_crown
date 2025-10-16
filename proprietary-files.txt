@@ -1,5 +1,59 @@
 # Unpinned blobs from Amazon/checkers/checkers:6.0/NS6570/6086N:user/amz-p,release-keys
 
+# Audio
+lib/libasp.so
+lib/libaspclient.so
+lib/libsmartvolume.so
+vendor/lib/hw/audio.primary.mt8163.so
+vendor/lib/hw/audio.usb.mt8163.so
+vendor/lib/libaudiocompensationfilter.so
+vendor/lib/libaudiocomponentengine.so
+vendor/lib/libaudiocustparam.so
+vendor/lib/libaudiodcrflt.so
+vendor/lib/libaudiosetting.so
+vendor/lib/libaudiotoolkit.so
+vendor/lib/libbessound_hd_mtk.so
+vendor/lib/libblisrc.so
+vendor/lib/libblisrc32.so
+vendor/lib/libcvsd_mtk.so
+vendor/lib/libmsbc_mtk.so
+vendor/lib/libmtklimiter.so
+vendor/lib/libmtkplayer.so
+vendor/lib/libmtkshifter.so
+vendor/lib/libspeech_enh_lib.so
+
+# Audio (Configs)
+etc/audio_device.xml
+vendor/etc/audio_device.xml
+vendor/etc/audio_em.xml
+vendor/etc/audio_param/AudioParamOptions.xml
+vendor/etc/audio-algorithms/AFE.cfg
+vendor/etc/audio-algorithms/coefs_FBF.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_160.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_640.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1024.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1280.cfg
+vendor/etc/audio-algorithms/EQ_100.cfg
+vendor/etc/audio-algorithms/EQ_30.cfg
+vendor/etc/audio-algorithms/EQ_40.cfg
+vendor/etc/audio-algorithms/EQ_60.cfg
+vendor/etc/audio-algorithms/EQ_70.cfg
+vendor/etc/audio-algorithms/EQ_80.cfg
+vendor/etc/audio-algorithms/EQ_90.cfg
+vendor/etc/audio-algorithms/EQ.cfg
+vendor/etc/audio-algorithms/hamming512_earcon.cfg
+vendor/etc/audio-algorithms/hanning_320.cfg
+vendor/etc/audio-algorithms/MBCL_10percent.cfg
+vendor/etc/audio-algorithms/MBCL_20percent.cfg
+vendor/etc/audio-algorithms/MBCL_default.cfg
+vendor/etc/audio-algorithms/MBCL_VOIP.cfg
+vendor/etc/audio-algorithms/MBCL.cfg
+vendor/etc/audio-algorithms/Tap_AEC_mic1.cfg
+vendor/etc/audio-algorithms/Tap_AEC_mic2.cfg
+vendor/etc/audio-algorithms/UserEQ.cfg
+vendor/etc/audio-algorithms/VOIPRxParametricEQ.cfg
+vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
+
 # Wi-Fi
 system/vendor/firmware/EEPROM_MT7668.bin:vendor/firmware/EEPROM_MT7668.bin
 system/vendor/firmware/mt7668_patch_e2_hdr.bin:vendor/firmware/mt7668_patch_e2_hdr.bin
