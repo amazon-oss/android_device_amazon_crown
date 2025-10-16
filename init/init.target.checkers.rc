@@ -1,3 +1,15 @@
+on post-fs-data
+    # create basic filesystem structure
+    mkdir /data/nvram 0771 root system
+    mkdir /data/nvram/media 0771 media audio
+    copy /vendor/etc/fstab.mt8163 /data/nvram/fstab.mt8163
+
 on boot
     chown bluetooth net_bt /dev/stpbt
     chmod 0660 /dev/stpbt
+
+service nvram_daemon /vendor/bin/nvram_daemon
+    class main
+    user root
+    group system audio net_bt
+    oneshot

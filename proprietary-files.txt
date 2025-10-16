@@ -54,6 +54,15 @@ vendor/etc/audio-algorithms/UserEQ.cfg
 vendor/etc/audio-algorithms/VOIPRxParametricEQ.cfg
 vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
 
+# NVRAM
+vendor/bin/nvram_daemon
+vendor/lib/libcustom_nvram.so
+vendor/lib/libfile_op.so
+vendor/lib/libnvram_daemon_callback.so
+vendor/lib/libnvram_platform.so
+vendor/lib/libnvram.so
+vendor/lib/libnvramagentclient.so
+
 # Wi-Fi
 system/vendor/firmware/EEPROM_MT7668.bin:vendor/firmware/EEPROM_MT7668.bin
 system/vendor/firmware/mt7668_patch_e2_hdr.bin:vendor/firmware/mt7668_patch_e2_hdr.bin
