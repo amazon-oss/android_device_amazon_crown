@@ -11,6 +11,9 @@ function blob_fixup() {
         vendor/lib/hw/audio.primary.mt8163.so)
             "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
             ;;
+        vendor/lib/libaudiocomponentengine.so)
+            "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
+            ;;
     esac
 }
 
