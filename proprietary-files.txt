@@ -1,8 +1,5 @@
 # Unpinned blobs from Amazon/checkers/checkers:6.0/NS6570/6086N:user/amz-p,release-keys
 
-# Audio - from onn/ONA19TB003/ONA19TB003:9/PPR1.180610.011/1570788406:user/release-keys
-vendor/lib/hw/audio.primary.mt8163.so|5e56f34fa9fe6adf718dde7576238b21601446ae|b4b0ae52d51ddc8b7ab434ded3089f094330e249
-
 # Wi-Fi
 system/vendor/firmware/EEPROM_MT7668.bin:vendor/firmware/EEPROM_MT7668.bin
 system/vendor/firmware/mt7668_patch_e2_hdr.bin:vendor/firmware/mt7668_patch_e2_hdr.bin
