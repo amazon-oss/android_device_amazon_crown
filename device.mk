@@ -8,7 +8,8 @@ $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-hea
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl
+    android.hardware.audio.effect@2.0-impl \
+    audio.primary.amazon_wrapper
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \

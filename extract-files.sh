@@ -8,7 +8,7 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/hw/audio.primary.mt8163.so)
+        vendor/lib/hw/audio.primary_amazon.mt8163.so)
             "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
             ;;
         vendor/lib/libaudiocomponentengine.so)
