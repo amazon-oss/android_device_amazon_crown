@@ -5,6 +5,10 @@
 
 $(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -48,7 +52,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayCheckers
 
 # Screen
-TARGET_SCREEN_DENSITY := 160
+TARGET_SCREEN_DENSITY := 195
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 960
 
