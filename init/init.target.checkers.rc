@@ -1,4 +1,24 @@
 on post-fs-data
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsactive
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsdelay
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsbatch
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsflush
+
+    chown system system /sys/class/misc/m_alsps_misc/alsactive
+    chown system system /sys/class/misc/m_alsps_misc/alsdelay
+    chown system system /sys/class/misc/m_alsps_misc/alsbatch
+    chown system system /sys/class/misc/m_alsps_misc/alsflush
+
+    chmod 0660 /sys/class/misc/m_alsps_misc/psactive
+    chmod 0660 /sys/class/misc/m_alsps_misc/psdelay
+    chmod 0660 /sys/class/misc/m_alsps_misc/psbatch
+    chmod 0660 /sys/class/misc/m_alsps_misc/psflush
+
+    chown system system /sys/class/misc/m_alsps_misc/psactive
+    chown system system /sys/class/misc/m_alsps_misc/psdelay
+    chown system system /sys/class/misc/m_alsps_misc/psbatch
+    chown system system /sys/class/misc/m_alsps_misc/psflush
+
     # create basic filesystem structure
     mkdir /data/nvram 0771 root system
     mkdir /data/nvram/media 0771 media audio
@@ -13,3 +33,12 @@ service nvram_daemon /vendor/bin/nvram_daemon
     user root
     group system audio net_bt
     oneshot
+
+service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
+    override
+    interface android.hardware.sensors@1.0::ISensors default
+    class hal
+    user system
+    group system wakelock uhid context_hub input
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10
