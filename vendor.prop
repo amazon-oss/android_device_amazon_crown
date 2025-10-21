@@ -1,5 +1,6 @@
 # Audio
 ro.hardware.audio.primary=amazon_wrapper
+ro.audiohal.has_get_capture_position=true
 
 # Display
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
