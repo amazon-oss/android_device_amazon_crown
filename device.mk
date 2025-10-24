@@ -60,6 +60,9 @@ TARGET_SCREEN_WIDTH := 960
 PRODUCT_PACKAGES += \
     sensors.echo
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml
+
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 25
 
