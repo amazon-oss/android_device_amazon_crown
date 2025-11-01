@@ -70,6 +70,10 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Suspend blocker
+PRODUCT_PACKAGES += \
+    suspend_blocker_mt8163
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal.policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.policy.conf
