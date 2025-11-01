@@ -58,7 +58,7 @@ TARGET_SCREEN_WIDTH := 960
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.echo
+    sensors.amazon
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml

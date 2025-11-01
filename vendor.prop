@@ -9,7 +9,7 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 ro.vendor.rfkilldisabled=1
 
 # Sensors
-ro.hardware.sensors=echo
+ro.hardware.sensors=amazon
 
 # Wi-Fi
 wifi.interface=wlan0
