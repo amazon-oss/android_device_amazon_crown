@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_checkers.mk
+    $(LOCAL_DIR)/lineage_crown.mk

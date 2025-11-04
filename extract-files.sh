@@ -25,7 +25,7 @@ fi
 
 set -e
 
-export DEVICE=checkers
+export DEVICE=crown
 export DEVICE_COMMON=mt8163-common
 export VENDOR=amazon
 

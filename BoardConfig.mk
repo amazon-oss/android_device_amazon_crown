@@ -3,16 +3,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/amazon/checkers
+DEVICE_PATH := device/amazon/crown
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := checkers
+TARGET_BOOTLOADER_BOARD_NAME := crown
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_checkers.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_crown.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := checkers_defconfig
+TARGET_KERNEL_CONFIG := crown_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -37,4 +37,4 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
 include device/amazon/mt8163-common/BoardConfigCommon.mk
 
 # Inherit the proprietary files
-include vendor/amazon/checkers/BoardConfigVendor.mk
+include vendor/amazon/crown/BoardConfigVendor.mk

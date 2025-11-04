@@ -5,9 +5,9 @@
     SPDX-License-Identifier: Apache-2.0
 -->
 
-<!-- checkers specific wifi overlays -->
+<!-- crown specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.resources.checkers"
+    package="com.android.wifi.resources.crown"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />

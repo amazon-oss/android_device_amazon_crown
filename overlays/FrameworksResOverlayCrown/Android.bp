@@ -4,7 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIOverlayCheckers",
+    name: "FrameworksResOverlayCrown",
     sdk_version: "current",
     resource_dirs: ["res"],
     vendor: true,
