@@ -21,6 +21,8 @@ vendor/lib/libmtklimiter.so
 vendor/lib/libmtkplayer.so
 vendor/lib/libmtkshifter.so
 vendor/lib/libspeech_enh_lib.so
+lib/libmediaextension.so
+lib/liblatencybenchmarker.so
 
 # Audio (Configs)
 etc/audio_device.xml
