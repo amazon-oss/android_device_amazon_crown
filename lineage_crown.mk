@@ -14,7 +14,7 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_NAME := lineage_crown
 PRODUCT_DEVICE := crown
-PRODUCT_MANUFACTURER := Amazon
-PRODUCT_BRAND := amazon
+PRODUCT_MANUFACTURER := Amzn
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Echo Show 8
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
