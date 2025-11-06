@@ -1,4 +1,4 @@
-# Unpinned blobs from Amazon/checkers/checkers:6.0/NS6570/6086N:user/amz-p,release-keys
+# Unpinned blobs from Amazon/crown/crown:6.0/NS6571/6190N:user/amz-p,release-keys
 
 # Audio
 lib/libasp.so
@@ -23,6 +23,7 @@ vendor/lib/libmtkshifter.so
 vendor/lib/libspeech_enh_lib.so
 lib/libmediaextension.so
 lib/liblatencybenchmarker.so
+lib/libtensorflowlite_c.so
 
 # Audio (Configs)
 etc/audio_device.xml
