@@ -1,10 +1,10 @@
 # Unpinned blobs from Amazon/crown/crown:6.0/NS6571/6190N:user/amz-p,release-keys
 
 # Audio
-lib/libasp.so
-lib/libaspclient.so
+lib/libasp.so|f72d08913bcfb13ade56d2ce09dd96e4b4e93570
+lib/libaspclient.so|81df145cdd734de4d45791c99be0a990bac859b7
 lib/libsmartvolume.so
-vendor/lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary_amazon.mt8163.so
+vendor/lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary_amazon.mt8163.so|bb4f93e163e0fa43bcf3f66ea44271aee372b666
 vendor/lib/hw/audio.usb.mt8163.so
 vendor/lib/libaudiocompensationfilter.so
 vendor/lib/libaudiocomponentengine.so
@@ -21,9 +21,8 @@ vendor/lib/libmtklimiter.so
 vendor/lib/libmtkplayer.so
 vendor/lib/libmtkshifter.so
 vendor/lib/libspeech_enh_lib.so
-lib/libmediaextension.so
+lib/libmediaextension.so|296480dc0f55b0c4eabdb80de62719c0db4c8b2b
 lib/liblatencybenchmarker.so
-lib/libtensorflowlite_c.so
 
 # Audio (Configs)
 etc/audio_device.xml
