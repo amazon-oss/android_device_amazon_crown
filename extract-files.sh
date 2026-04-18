@@ -14,6 +14,12 @@ function blob_fixup() {
         vendor/lib/libaudiocomponentengine.so)
             "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
             ;;
+        etc/audio_device.xml)
+            sed -i \
+                -e 's|<kctl name="ADC_A MICPGA Volume Ctrl" value="40" />|<kctl name="ADC_A MICPGA Volume Ctrl" value="80" />|' \
+                -e 's|<kctl name="ADC_B MICPGA Volume Ctrl" value="40" />|<kctl name="ADC_B MICPGA Volume Ctrl" value="80" />|' \
+                "${2}"
+            ;;
     esac
 }
 
