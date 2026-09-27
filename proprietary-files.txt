@@ -66,7 +66,7 @@ vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
 vendor/etc/audio-algorithms/vss_cpd_priors.cfg
 
 # Camera (tuning)
-system/vendor/lib/libcameracustom.so
+system/vendor/lib/libcameracustom.so|bb6da49c1fda635723ef0b4fa096648988e1e5cb
 
 # NVRAM
 vendor/bin/nvram_daemon
