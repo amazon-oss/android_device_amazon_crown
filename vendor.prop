@@ -16,6 +16,9 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 # Bluetooth
 ro.vendor.rfkilldisabled=1
 
+# Power
+ro.vendor.power.wall_powered=true
+
 # Sensors
 ro.hardware.sensors=amazon
 
