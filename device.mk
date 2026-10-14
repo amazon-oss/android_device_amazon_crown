@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -34,6 +34,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mt76x8_bt
 
+# Dexpreopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    pm.dexopt.bg-dexopt=speed \
+    pm.dexopt.install=speed
+
 # Init
 PRODUCT_PACKAGES += \
     init.target.crown.rc
@@ -41,6 +48,10 @@ PRODUCT_PACKAGES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc/)
+
+# Memory
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.low_ram=false
 
 # Modules
 PRODUCT_COPY_FILES += \
