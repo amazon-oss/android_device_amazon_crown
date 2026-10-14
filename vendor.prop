@@ -20,4 +20,5 @@ ro.vendor.rfkilldisabled=1
 ro.hardware.sensors=amazon
 
 # Wi-Fi
+ro.vendor.wifi.sap.interface=ap0
 wifi.interface=wlan0
