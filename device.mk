@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayCrown \
     SystemUIOverlayCrown
 
+# Parts
+PRODUCT_PACKAGES += \
+    EchoParts
+
 # Screen
 TARGET_SCREEN_DENSITY := 213
 TARGET_SCREEN_HEIGHT := 800
