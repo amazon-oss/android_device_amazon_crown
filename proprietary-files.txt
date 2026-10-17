@@ -1,7 +1,8 @@
 # Unpinned blobs from Amazon/crown/crown:6.0/NS6571/6190N:user/amz-p,release-keys
 
 # Audio
-lib/libasp.so|f72d08913bcfb13ade56d2ce09dd96e4b4e93570
+lib/libasp.so|e3816eb3efd4654c708d3891a5f907b79f3ebce3
+lib/libedgeflow_core_neon.so|d458d3e06fea464890e78e944255b05411054fd4
 lib/libaspclient.so|81df145cdd734de4d45791c99be0a990bac859b7
 lib/libsmartvolume.so
 vendor/lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary_amazon.mt8163.so|bb4f93e163e0fa43bcf3f66ea44271aee372b666
@@ -22,6 +23,7 @@ vendor/lib/libmtkshifter.so
 vendor/lib/libspeech_enh_lib.so
 lib/libmediaextension.so|296480dc0f55b0c4eabdb80de62719c0db4c8b2b
 lib/liblatencybenchmarker.so
+lib/libtensorflowlite_c.so|90aa3bff3f773d18774fe2a1d1f6646b575fda98
 
 # Audio (Configs)
 etc/audio_device.xml
